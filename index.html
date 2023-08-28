@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trainer Society</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            overflow-x: hidden;
+
+        }
+
+        .content {
+            padding: 4rem;
+            overflow-x: hidden;
+
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+            overflow-x: hidden;
+
+        }
+
+        .feature {
+            padding: 2rem 0;
+            overflow-x: hidden;
+
+        }
+
+        .join-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            width: 10%;
+            height: 50px;
+            margin-bottom: 40px;
+            overflow-x: hidden;
+
+        }
+
+        .btn {
+            width: 10%;
+            width: 50%;
+            overflow-x: hidden;
+
+        }
+
+        .join-button:hover {
+            background-color: #07ff6a;
+            color: black;
+            font-weight: bold;
+            overflow-x: hidden;
+
+        }
+
+
+
+        /* footer section part coding and style.css of footer   */
+
+        footer {
+            background-color: #121315;
+            color: #a7a7a7;
+            font-size: 16px;
+            overflow-x: hidden;
+
+        }
+
+        footer * {
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            overflow-x: hidden;
+
+        }
+
+        .row {
+            padding: 1em;
+            overflow-x: hidden;
+
+        }
+
+        .row.primary {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            align-items: stretch;
+            overflow-x: hidden;
+
+        }
+
+        .column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 2em;
+            min-height: 15em;
+            overflow-x: hidden;
+
+        }
+
+        h3 {
+            width: 100%;
+            text-align: left;
+            color: white;
+            font-size: 1.4em;
+            white-space: nowrap;
+            overflow-x: hidden;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+
+        }
+
+        li:not(:first-child) {
+            margin-top: 0.8em;
+            overflow-x: hidden;
+
+        }
+
+        ul li a {
+            color: #a7a7a7;
+            text-decoration: none;
+            overflow-x: hidden;
+
+        }
+
+        ul li a:hover {
+            color: #2a8ded;
+            overflow-x: hidden;
+
+        }
+
+        .about p {
+            text-align: justify;
+            line-height: 2;
+            margin: 0;
+            overflow-x: hidden;
+
+        }
+
+        input,
+        button {
+            font-size: 1em;
+            padding: 1em;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            overflow-x: hidden;
+
+        }
+
+        button {
+            background-color: #c7940a;
+            color: #ffffff;
+            overflow-x: hidden;
+
+        }
+
+        div.social {
+            display: flex;
+            justify-content: space-around;
+            font-size: 2.4em;
+            flex-direction: row;
+            margin-top: 0.5em;
+            overflow-x: hidden;
+
+        }
+
+        .social i {
+            color: #bac6d9;
+            overflow-x: hidden;
+
+        }
+
+        .copyright {
+            padding: 0.3em;
+            background-color: #25262e;
+            overflow-x: hidden;
+
+        }
+
+        .footer-menu {
+            padding: 4px;
+            margin-left: 15px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            overflow-x: hidden;
+
+        }
+
+        .footer-menu a {
+            color: #cfd2d6;
+            padding: 6px;
+
+            text-decoration: none;
+            overflow-x: hidden;
+
+        }
+
+        .footer-menu a:hover {
+            color: #27bcda;
+            overflow-x: hidden;
+
+        }
+
+        .footer-name {
+            text-align: center;
+            padding: 1%;
+            background-color: #121315;
+            color: #fff;
+            font-weight: bold
+
+           
+        }
+        .footer-name:hover{
+            color: #07ff6a;
+            font-weight: normal;
+            overflow-x: hidden;
+
+        }
+
+        @media screen and (max-width: 850px) {
+            .row.primary {
+                grid-template-columns: 1fr;
+                overflow-x: hidden;
+
+            }
+
+        }
+
+        /* footer section part coding and style.css of footer   */
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to the AI Trainer Society</h1>
+        <p>You will get access of 50 artificial intelligence free for your productivity </p>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-6 feature">
+                <i class="fas fa-comments feature-icon"></i>
+                <h2>Engaging Discussions</h2>
+                <p>Dive into thought-provoking discussions about the <br>latest advancements in AI.</p>
+                <div class="container text-center">
+                    <button class="btn btn-primary join-button">Join Now</button>
+                </div>
+
+            </div>
+            <div class="col-md-6 feature">
+                <i class="fas fa-laptop-code feature-icon"></i>
+                <h2>Hands-on Workshops</h2>
+                <p>Develop practical AI skills through immersive workshops led by industry experts.</p>
+                <div class="container text-center">
+                    <button class="btn btn-primary join-button">Join Now</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 feature">
+                <i class="fas fa-project-diagram feature-icon"></i>
+                <h2>Collaborative Projects</h2>
+                <p>Join forces with fellow members to work on exciting AI projects.</p>
+                <div class="container text-center">
+                    <button class="btn btn-primary join-button">Join Now</button>
+                </div>
+            </div>
+            <div class="col-md-6 feature">
+                <i class="fas fa-book feature-icon"></i>
+                <h2>Learning Resources</h2>
+                <p>Access a treasure trove of resources designed to fuel your AI journey.</p>
+                <div class="container text-center">
+                    <button class="btn btn-primary join-button">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <button class="btn btn-primary join-button">Create Account</button>
+    </div>
+
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h3>Lokbidhi Cyberpur JanakpurDham</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                    voluptatem corporis error non,
+                </p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-youtube-square"></i>
+                    <i class="fa-brands fa-whatsapp-square"></i>
+                </div>
+            </div>
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul>
+                    <li>
+                        <a href="#faq">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="#cookies-policy">Cookies Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms-of-services">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul>
+                    <li>
+                        <a href="#faq">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="#cookies-policy">Policy</a>
+                    </li>
+                    <li>
+                        <a href="#terms-of-services">Terms Of Service</a>
+                    </li>
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="footer-menu">
+
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Blog</a>
+                <a href="">Social</a>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-name">Copyright &copy; 2023 Lokbidhi Cyberpur</div>
+    <!-- Font Awesome icons (ensure you include the link in the head section) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</body>
+
+</html>
